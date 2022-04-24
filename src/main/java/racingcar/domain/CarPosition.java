@@ -1,7 +1,7 @@
 package racingcar.domain;
 
 public class CarPosition {
-    int carPosition;
+    private int carPosition;
 
     public CarPosition(int carPosition) {
         this.carPosition = carPosition;
@@ -14,5 +14,9 @@ public class CarPosition {
     @Override
     public String toString(){
         return Integer.toString(carPosition);
+    }
+
+    public int getCarPosition() {
+        return carPosition;
     }
 }

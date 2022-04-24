@@ -15,6 +15,12 @@ public class GameSystem {
         carGroup = buildCarGroup();
         numberOfRound = getNumberOfRound();
         printResult();
+        printFinalWinner();
+    }
+
+    private void printFinalWinner() {
+        carGroup.setFinalWinner();
+        printWinnerList(carGroup);
     }
 
     private void printResult() {
@@ -44,7 +50,7 @@ public class GameSystem {
         try {
             runnable.run();
             return false;
-        } catch (Exception e) {
+        } catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
         return true;
