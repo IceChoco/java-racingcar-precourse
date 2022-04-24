@@ -18,7 +18,7 @@ public class Pay {
     }
 
     public Long getAmount() {
-        return (Long) amount;
+        return Long.parseLong(String.valueOf(amount));
     }
 
     public String getPayType() {
