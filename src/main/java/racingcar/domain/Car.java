@@ -18,13 +18,13 @@ public class Car implements Comparable<Car> {
     }
 
     private void verifyingCarNameIsEmpty(String carName) {
-        if(carName.isEmpty()){
+        if (carName.isEmpty()) {
             throw new IllegalArgumentException(ERROR_CAN_NOT_EMPTY_CAN_NAME);
         }
     }
 
     private void verifyingCarNameLength(String carName) {
-        if(carName.length() > CAR_NAME_MAX){
+        if (carName.length() > CAR_NAME_MAX) {
             throw new IllegalArgumentException(ERROR_CAR_NAME_MAX_GUIDE);
         }
     }
@@ -34,8 +34,8 @@ public class Car implements Comparable<Car> {
         goOrStop(randomNumber.getNumber());
     }
 
-    private void goOrStop(int number){
-        if(number >= 4){
+    private void goOrStop(int number) {
+        if (number >= 4) {
             position.increase();
         }
     }
@@ -45,11 +45,11 @@ public class Car implements Comparable<Car> {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return car;
     }
 
-    public void callGoOrStop(int number){
+    public void callGoOrStop(int number) {
         goOrStop(number);
     }
 

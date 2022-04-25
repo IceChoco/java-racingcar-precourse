@@ -31,7 +31,7 @@ public class GameSystem {
     private CarGroup buildCarGroup() {
         boolean nonOk = true;
         Runnable action = () -> carGroup = new CarGroup(InputHandler.splitByComma(requestInputCarName()));
-        while(nonOk){
+        while (nonOk) {
             nonOk = doTryCatch(action);
         }
         return carGroup;
@@ -40,7 +40,7 @@ public class GameSystem {
     private NumberOfRound getNumberOfRound() {
         boolean nonOk = true;
         Runnable action = () -> numberOfRound = new NumberOfRound(requestInputNumberOfRound());
-        while(nonOk){
+        while (nonOk) {
             nonOk = doTryCatch(action);
         }
         return numberOfRound;
@@ -50,7 +50,7 @@ public class GameSystem {
         try {
             runnable.run();
             return false;
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
         return true;

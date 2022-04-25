@@ -11,17 +11,17 @@ public class OutputView {
         System.out.println(EXECUTION_RESULT);
     }
 
-    public static void printResultByCar(Car car){
+    public static void printResultByCar(Car car) {
         System.out.println(car + " : " + makeHyphenFromNumber(Integer.parseInt(car.getPosition().toString())));
     }
 
-    public static void printWinnerList(CarGroup carGroup){
-        System.out.println("최종 우승자: "+carGroup.getFinalWinner());
+    public static void printWinnerList(CarGroup carGroup) {
+        System.out.println("최종 우승자: " + carGroup.getFinalWinner());
     }
 
-    private static String makeHyphenFromNumber(int number){
+    private static String makeHyphenFromNumber(int number) {
         StringBuilder sb = new StringBuilder();
-        for(int i=0;i<number;i++){
+        for (int i = 0; i < number; i++) {
             sb.append("-");
         }
         return sb.toString();

@@ -12,7 +12,7 @@ public class CarPosition {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return Integer.toString(carPosition);
     }
 

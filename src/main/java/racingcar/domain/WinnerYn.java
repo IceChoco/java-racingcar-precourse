@@ -11,7 +11,7 @@ public class WinnerYn {
         this.winner = true;
     }
 
-    public boolean isWinner(){
+    public boolean isWinner() {
         return winner;
     }
 }

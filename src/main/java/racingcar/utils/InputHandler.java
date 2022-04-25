@@ -10,8 +10,8 @@ public class InputHandler {
         String[] result = requestInputCarName.split(",");
         ArrayList<Car> resultList = new ArrayList<>();
 
-        for(int i=0;i<result.length;i++){
-            resultList.add(new Car(result[i]));
+        for (String s : result) {
+            resultList.add(new Car(s));
         }
 
         return resultList;
